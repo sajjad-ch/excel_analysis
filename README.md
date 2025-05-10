@@ -1,4 +1,3 @@
-Here’s a `README.md` file tailored for your **`sajjad-ch-excel_analysis`** Django project:
 
 ---
 
@@ -11,37 +10,6 @@ A Django-based web application for analyzing Excel files with user authenticatio
 
 ## 📁 Project Structure
 
-```
-
-sajjad-ch-excel\_analysis/
-│
-├── manage.py               # Django project entry point
-├── requirements.txt        # Python dependencies
-│
-├── excel\_analysis/         # Main project configuration
-│   ├── settings.py         # Project settings
-│   ├── urls.py             # Root URL configuration
-│   ├── wsgi.py / asgi.py   # Deployment entry points
-│
-├── account/                # User management module
-│   ├── models.py           # Custom user model (if any)
-│   ├── forms.py            # Registration/login forms
-│   ├── views.py            # Login, register, password reset views
-│   ├── templates/account/  # HTML templates for user auth
-│
-├── analysis/               # Excel file analysis module
-│   ├── models.py           # File upload model
-│   ├── forms.py            # Upload form
-│   ├── signals.py          # Signals for background processing
-│   ├── views.py            # File processing, plotting, AI reports
-│   ├── templates/analysis/ # HTML templates for data views
-│
-├── share/                  # Extra documentation files (e.g., man pages)
-│
-└── statics/                # Static files (CSS, JS, images)
-└── admin/              # Custom admin styles and JS
-
-````
 
 ---
 
