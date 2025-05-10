@@ -1,0 +1,45 @@
+# Virtual environment
+venv/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# Environment variables
+.env
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+
+# Celery PID files
+*.pid
+
+# Celery Beat schedule database
+celerybeat-schedule
+celerybeat-schedule.*
+
+# Cache and temp files
+*.swp
+*.swo
+
+# SQLite database (if used)
+db.sqlite3
+
+# Django static & media files (if collected manually)
+static/
+media/
+
+# Ignore __pycache__ in migrations
+*/migrations/__pycache__/
+
+__pycache__/

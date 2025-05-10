@@ -1,0 +1,26 @@
+<div class="row">
+{% for file in user_files %}
+    <div class="col-xl-3 col-md-6 mb-4">
+        <a href="{% url 'DataSummary' file.file_name %}" style="text-decoration: none;">
+            <div class="card border-left-primary shadow h-100 py-2" style="transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 0.5rem 1rem rgba(0, 0, 0, 0.15)';" onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div style="font-size: 0.75rem; font-weight: bold; color: #4e73df; text-transform: uppercase; margin-bottom: 0.5rem;">
+                                {{ file.file_name }}
+                            </div>
+                            <div style="font-size: 1.25rem; margin-bottom: 0; font-weight: bold; color: #5a5c69;">
+                                File Summary
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-file-alt fa-2x" style="color: #d1d3e2;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <br/>
+{% endfor %}
+</div>
